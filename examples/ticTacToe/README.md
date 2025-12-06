@@ -98,12 +98,14 @@ The game supports exporting and importing game state to/from JSON files with cus
 
 - **Export**: Choose "Save Game (Export JSON)" from the main menu
   - You'll be prompted to enter a filename (e.g., `my-tictactoe.json`)
-  - The file will be saved in the current working directory
-  - Success message shows the full path where the file was saved
+  - The `.json` extension is automatically added if not provided
+  - The file will be saved in the `src/main/resources/` directory
+  - Success message confirms the save: `TicTacToe state exported successfully to: my-tictactoe.json`
 
 - **Import**: Choose "Load Game (Import JSON)" from the main menu
   - You'll be prompted to enter the filename to load (e.g., `my-tictactoe.json`)
-  - The game state will be restored from the specified file
+  - The `.json` extension is automatically added if not provided
+  - The game state will be restored from `src/main/resources/` directory
   - The board will be displayed after successful import
 
 The saved JSON file format:
@@ -123,7 +125,7 @@ The saved JSON file format:
 ```
 Choose an option: 4
 Enter filename to export (e.g., tictactoe.json): my-tictactoe.json
-TicTacToe state exported successfully to: /path/to/my-tictactoe.json
+TicTacToe state exported successfully to: my-tictactoe.json
 ```
 
 ```
@@ -131,6 +133,8 @@ Choose an option: 5
 Enter filename to import (e.g., tictactoe.json): my-tictactoe.json
 TicTacToe state imported successfully!
 ```
+
+**Note:** Files are stored in `src/main/resources/` relative to the project. You can find your exported files in `examples/ticTacToe/src/main/resources/`
 
 ## Author
 

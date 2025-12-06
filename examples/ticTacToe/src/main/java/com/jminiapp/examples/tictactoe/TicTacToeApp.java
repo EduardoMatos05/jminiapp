@@ -225,9 +225,7 @@ public class TicTacToeApp extends JMiniApp {
 
             context.exportData(filename, "json");
 
-            // Get the absolute path for user feedback
-            String absolutePath = System.getProperty("user.dir") + "/" + filename;
-            System.out.println("TicTacToe state exported successfully to: " + absolutePath);
+            System.out.println("TicTacToe state exported successfully to: " + filename);
         } catch (IOException e) {
             System.out.println("Error saving game: " + e.getMessage());
         }
