@@ -1,0 +1,17 @@
+[
+  {
+    "board": [
+      "X",
+      "O",
+      "X",
+      " ",
+      " ",
+      " ",
+      " ",
+      " ",
+      " "
+    ],
+    "currentPlayer": "O",
+    "gameOver": false
+  }
+]
